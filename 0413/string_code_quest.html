@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+            코드: 제품, 사람, 학생들에 대한 고유번호 체계
+
+            제조사번호-물품종류-고유코드
+            
+            물품 종류 : 1-식품, 2-전자제품, 3-의약품, 4-생활용품
+                        1~4에 해당하는 값이 아니면 코드 오류
+
+            제품코드를 입력받아서 해당 물품 종류를 출력
+
+            AN01010-3-RE244 입력값
+            입력한 물품은 의약품입니다 결과값
+        */
+        var num = prompt("코드를 입력하세요");
+        var code = num.substring(num.indexOf("-")+1,num.lastIndexOf("-"));
+        console.log(code);
+        switch(code){
+            case "1":
+                document.write("입력한 물품은 식품입니다.","<br>");
+                break;
+            case "2":
+                document.write("입력한 물품은 전자제품입니다.","<br>");
+                break;
+            case "3":
+                document.write("입력한 물품은 의약품입니다.","<br>");
+                break;
+            case "4":
+                document.write("입력한 물품은 생황용품입니다.","<br>");
+                break;
+            default:
+                document.write("입력한 코드 오류","<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

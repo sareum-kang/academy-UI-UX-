@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float/clear</title>
+    <style>
+        .box1 {
+            width: 200px;
+            height: 150px;
+            border: 15px dotted lightcoral;
+            background-color: rgb(250, 209, 209);
+        }
+
+        .box2 {
+            width: 150px;
+            height: 150px;
+            border: 15px double rgb(105, 198, 230);
+            background-color: rgb(198, 236, 248);
+        }
+
+        .box3 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid rgb(53, 228, 219);
+            background-color: rgb(145, 236, 232);
+        }
+
+        .left {
+            float: left;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .clear {
+            clear: both
+        }
+
+        .contaior {
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contaior">
+        <div class="box1 right">1</div>
+        <div class="box2 leftr">2</div>
+    </div>
+    <div class="box3 clear">3</div>
+</body>
+
+</html>

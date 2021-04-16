@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var today = new Date("2021-04-12");
+        var tag = "<h2>"+(today.getMonth()+1)+"월 달력<h2>";
+            tag +="<table><tr><th>일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th>토</th></tr>"
+        //시작 날짜
+        //현재 월 정보 저장
+        var month = today.getMonth();
+
+        var start = new Date();
+        start.setHours(0);
+        start.setMinutes(0);
+        start.setSeconds(0);
+        start.setDate(1);
+        var end = new Date();
+        end.setMonth(end.getMonth()+1); //다음달 변경
+        end.setDate(0);
+        end.setHours(0);
+        end.setMinutes(0);
+        end.setSeconds(0); //0 전달 마지막날
+
+        console.log(start);
+        console.log(end);
+
+        //1주차 빈칸 부분
+        tag += "<tr>";
+        //달력 첫칸 날짜 계산
+        start.setDate(start.getDate()-start.getDay());
+        //달력 마지막 날짜 계산
+        end.setDate(end.getDate()+6-end.getDay());
+        console.log("달력 첫칸:"+start);
+        console.log("달력 마지막칸:"+end);
+
+        //달력 줄수 계산
+        var line = (end.getTime()-start.getTime())/(1000*60*60*24*7);
+        console.log(line)
+
+        for(j=0;j<line;j++){
+            tag +="<tr>"
+                for(i=0;i<7.;i++){
+                    if(month!= start.getMonth())
+                        tag+="<td class='disable'>"+start.getDay()+"</td>"
+                    else
+                        tag+="<td>"+start.getDay()+"</td>"
+            start.setDate(start.getDate()+1);
+            }
+        }
+        tag += "</tr>";
+
+        tag += "</table>"
+        document.write(tag);
+    </script>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        h2{
+            text-align: center;
+        }
+        th,td{
+            border: 1px solid black;
+            width: 150px;
+        }
+        td{
+            vertical-align: top;
+            text-align: right;
+            height: 150px;
+            font-size: 18px;
+        }
+        td:nth-child(7n), th:nth-child(7n){
+            color: blue;
+        }
+        td:nth-child(7n+1), th:nth-child(7n+1){
+            color: red;
+        }
+        .disable{
+            color: lightgrey !important;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

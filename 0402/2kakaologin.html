@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style-type: none;
+        }
+        h1{
+            text-align: center;
+            margin: 20px 0px;
+        }
+        #container{
+            width: 550px;
+            height: 800px;
+            padding: 50px;
+            margin: 0 auto;
+            border: 1px solid lightgrey;
+            box-sizing: border-box;
+        }
+        h3{
+            padding: 20px 0;
+        }
+        label{
+            font-size: 12px;
+        }
+        .line{
+            border-bottom: 2px solid lightgrey;
+            padding: 8px 0;
+            font-size: 16px;
+            color: lightgrey;
+            font-weight: bold;
+        }
+        input{
+            border: none;
+        }
+        #id_width{
+            width: 350px;
+        }
+        #name_width{
+            width: 410px;
+        }
+        .font{
+            color: black;
+            font-weight: bold;
+        }
+        #last{
+            font-size: 12px;
+            padding: 15px 0px 40px 15px;
+            line-height: 20px;
+            font-weight: bold;
+            color: rgb(190, 190, 190);
+        }
+        .name_tel{
+            margin-top: 20px;
+        }
+        #middle_btn{
+            float: right;
+            width: 150px;
+            height: 40px;
+            font-size: 18px;
+            margin-top: 20px;
+            border-radius: 20px;
+            background-color: white;
+            border: 1xp solid rgb(182, 182, 182);
+        }
+        #date{
+            clear: both;
+        }
+        .select{
+            border: none;
+            width: 100px;
+            margin-bottom: 5px;
+        }
+        #next_btn{
+            width: 450px;
+            height: 40px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        #next_btn:hover{
+            background-color: rgb(255, 238, 0);
+            color: black;
+        }
+        #bth{
+            float: right;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>kakao</h1>
+    <div id="container">
+        <h3>카카오계정 정보를 입력해 주세요.</h3>
+        <ul>
+            <li><label for="id">카카오계정 이메일</label></li>
+            <li class="line"><input id="id_width" type="text" placeholder="아이디 입력"><span class="font">@kakao.com</span></li>
+            <ul id="last">
+                <li>입력한 카카오메일로 카카오계정에 로그인 할 수 있습니다.</li>
+                <li>한번 만든 카카오메일은 변경할 수 없으니, 오타가 없도록 신중히 확인해 주세요.</li>
+                <li>생성한 카카오메일로 카카오계정과 관련한 알림을 받아볼 수 있습니다.</li>
+            </ul>
+            <li><label for="pass">비밀번호</label></li>
+            <li  class="line" ><input type="password" name="password" id="pass" placeholder="비밀번호(8~32자리)"></li>
+            <li  class="line"><input type="password" placeholder="비밀번호 재입력"></li>
+            <li class="name_tel"><label for="name">닉네임</label></li>
+            <li  class="line"><input id="name_width" type="text" placeholder="닉네임을 입력해 주세요."><span class="font">0/20</span></li>
+            <li class="name_tel"><label for="tel">전화번호</label></li>
+            <li class="line">
+                <select class="select" name="gcode" id="gcode">
+                    <option value="82" selected>+82</option>
+                    <option value="32">+32</option>
+                    <option value="01">+01</option>
+                </select>
+                <input type="text" placeholder="전화번호">
+            </li>
+            <button id="middle_btn" type="submit">인증번호 전송</button>
+            <li id="date"><label for="date">생일/설병</label></li>
+            <li class="line">
+                <select class="select" name="year" id="year">
+                    <option value="first" selected>연도</option>
+                    <option value="1990">1990</option>
+                    <option value="1991">1991</option>
+                </select>
+                <select class="select" name="month" id="month">
+                    <option value="month" selected>월</option>
+                    <option value="1">1월</option>
+                    <option value="2">2월</option>
+                </select>
+                <select class="select" name="day" id="day">
+                    <option value="day">일</option>
+                    <option value="1">1일</option>
+                    <option value="2">2일</option>
+                    <option value="3">3일</option>
+                    <option value="4">4일</option>
+                </select>
+                <span id="bth"><input type="checkbox">음력</span>
+            </li>
+            <li>
+                <input type="radio" checked>선택안함
+                <input type="radio">여성
+                <input type="radio">남성
+            </li>
+            <button id="next_btn" type="submit">다음</button>
+        </ul>
+    </div>
+</body>
+
+</html>

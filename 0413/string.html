@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo";
+        //문자열에서 위치에 해당하는 한글자 뽑음 - 위치값은 0부터 시작
+
+        //문자열 부부 추출
+        document.write(str.substring(4, 10),"<br>");
+        document.write(str.substring(4),"<br>");
+        document.write(str.substr(4, 10),"<br>");
+
+        //대소문자 변경
+        document.write(str.toLocaleLowerCase(),"<br>");
+        document.write(str.toLocaleUpperCase(),"<br>");
+
+        var str2 = "응";
+        document.write(str2.charCodeAt(0),"<br>");
+        document.write(String.fromCharCode(65),"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

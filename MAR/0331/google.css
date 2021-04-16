@@ -1,0 +1,147 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    min-width: 1200px;
+    margin: 0 auto;
+
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    padding-right: 20px;
+}
+
+li {
+    float: right;
+    padding: 20px 0px 0px 35px;
+}
+.header_p{
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+}
+
+header button {
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+    border: none;
+}
+
+nav {
+    min-width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10;
+    bottom: 0;
+    width: 1200px;
+    height: 150px;
+    margin: auto;
+}
+
+nav img {
+        width: 350px;
+}
+section{
+    text-align: center;
+}
+section input{
+    width: 500px;
+    height: 44px;
+    padding-left: 50px;
+    font-size: 20px;
+    background-image: url(/0330/sc.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 10px center;
+    border-radius: 25px;
+    border-color: white;
+    outline: none;
+}
+input:hover{
+    box-shadow: 0px 0px 10px rgb(187, 187, 187);
+}
+form{
+    display: inline-block;
+    padding: 0px 20px;
+}
+form>*{
+    float: left;
+}
+form a{
+    display: inline-block;
+    height: 32px;
+    padding: 8px 0px;
+    margin-left: 10px;
+}
+form img{
+    width: 32px;
+}
+article>button{
+    clear: both;
+}
+footer{
+    min-width: 1200px;
+    margin: 0 auto;
+}
+.korea{
+    clear: both;
+    min-width: 1200px;
+    background-color: rgb(235, 234, 234);
+    border-bottom: 1px solid grey;
+    padding: 20px 0px 20px 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: grey;
+}
+.last{
+    min-width: 1200px;
+    background-color: rgb(235, 234, 234);
+    padding: 20px 0px 20px 15px;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: grey;
+}
+.left{
+    padding-bottom: 15px;
+    float: left;
+    line-height: 1px;
+    color: grey;
+
+}
+.right{
+    padding: 0px 20px 15px 0px;
+    line-height: 1px;
+    color: grey;
+}

@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar{
+  width: 0px;
+  height: 0px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: turquoise;
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-track{
+  background-color: violet;
+  border-radius: 5px;
+}
+.left_bar {
+  width: 60px;
+  height: 1200px;
+  position: fixed;
+  background-color: #8c7b75;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+nav img {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0 10px 10px;
+  transition: 0.5s;
+}
+nav img:hover {
+  background-color: lightgray;
+  border-radius: 50px;
+}
+header {
+  width: 1860px;
+  height: 700px;
+  box-sizing: border-box;
+  margin-left: 60px;
+}
+header img {
+  width: 1860px;
+  height: 700px;
+}
+.middle_bar {
+  height: 60px;
+  width: 1860px;
+  margin-left: 60px;
+  box-sizing: border-box;
+  background-color: #bcaaa4;
+}
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  width: 200px;
+  height: 60px;
+  line-height: 55px;
+  font-size: 24px;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+}
+.middle_bar a:hover{
+  text-decoration: underline;
+}
+section {
+  width: 1860px;
+  height: 600px;
+  margin-left: 60px;
+}
+.section1 {
+  background-size: 100% 100%;
+  background-image: url(/0402/sec1.jpg);
+  background-repeat: no-repeat;
+}
+.info_detail{
+  width: 500px;
+  background-color: #ff000067;
+  color:white;
+  position: relative;
+  top : 100px;
+  left: 200px;
+
+  padding:30px;
+}
+.section2 {
+  background-color: #f1d3c8;
+  text-align: center;
+  padding: 92px 0px;
+  box-sizing: border-box;
+}
+.second {
+  width: 1200px;
+  height: 350px;
+  display: inline-block;
+}
+.section3 {
+  text-align: center;
+  background-color: #f3bca8;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+  padding-top: 20px;
+}
+h2 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 20px;
+}
+select {
+  position: absolute;
+  right: 250px;
+  top: 80px;
+  width: 150px;
+  height: 50px;
+}
+.last_pic {
+  display: inline-block;
+  margin-top: 70px;
+  box-sizing: border-box;
+}
+.last_pic img {
+  width: 400px;
+  height: 350px;
+  margin-left: 20px;
+  margin-right: 20px;
+}

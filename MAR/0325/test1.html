@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            height: 35px;
+        }
+
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 1000px;
+        }
+
+        #click {
+            text-align: right;
+            padding-left: 200px;
+        }
+
+        td,th {
+            border-top: 1px solid black;
+        }
+
+        span {
+            padding: 0px 3px;
+            border-radius: 50%;
+            background-color: lightgreen;
+            font-weight: bold;
+            font-size: 12px;
+        }
+
+        .notice {
+            font-size: 24px;
+            padding-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .title {
+            background-color: skyblue;
+        }
+
+        .ti {
+            width: 300px;
+        }
+
+        .long {
+            width: 70px;
+        }
+
+        .long2 {
+            width: 150px;
+        }
+
+        .no {
+            width: 40px;
+            height: 40px;
+        }
+
+        .no2 {
+            background-color: rgb(71, 135, 253);
+            color: white;
+        }
+
+        .wr {
+            width: 100px;
+            height: 40px;
+            background-color: rgb(71, 135, 253);
+            color: white;
+        }
+        .bottom{
+            text-align: right;
+            padding-top: 10px;
+            padding-right: 15px;
+        }
+        button{
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption class="notice">게시판</caption>
+        <tr class="title">
+            <th class="long">No.</th>
+            <th class="ti">title</th>
+            <th class="long">count</th>
+            <th class="long2">date</th>
+            <th class="long">좋아요</th>
+            <th class="long">싫어요</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>제목<span>N</span></td>
+            <td>0</td>
+            <td>2020-12-01</td>
+            <td>0</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>제목</td>
+            <td>2</td>
+            <td>2020-11-31</td>
+            <td>40</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>제목</td>
+            <td>345</td>
+            <td>2020-11-30</td>
+            <td>112</td>
+            <td>42</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>제목</td>
+            <td>456</td>
+            <td>2020-11-29</td>
+            <td>44</td>
+            <td>457</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>제목</td>
+            <td>324</td>
+            <td>2020-11-29</td>
+            <td>75</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>제목</td>
+            <td>22</td>
+            <td>2020-11-29</td>
+            <td>4</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th colspan="4" class="bottom">
+                <button type="submit" class="no">←</button>
+                <button type="submit" class="no">1</button>
+                <button type="submit" class="no no2">2</button>
+                <button type="submit" class="no">3</button>
+                <button type="submit" class="no">4</button>
+                <button type="submit" class="no">→</button>
+            </th>
+            <th colspan="2" id="click"><button type="submit" class="wr">글쓰기</button></th>
+        </tr>
+    </table>
+</body>
+
+</html>

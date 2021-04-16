@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이트진로 레이아웃</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+        }
+
+        .left_menu {
+            width: 60px;
+            height: 1800px;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            box-sizing: border-box;
+            background-color: #97837b;
+        }
+
+        nav img {
+            width: 40px;
+            height: 40px;
+            padding: 20px 0 15px 10px;
+        }
+
+        header {
+            font-size: 0;
+        }
+
+        header img {
+            width: 1860px;
+            height: 650px;
+            margin-left: 60px;
+        }
+
+        .middle_menu {
+            width: 1860px;
+            height: 60px;
+            margin-left: 60px;
+            box-sizing: border-box;
+            background-color: #dfcfc9;
+        }
+
+        .middle_menu ul {
+            text-align: center;
+        }
+
+        .middle_menu li {
+            display: inline-block;
+        }
+
+        .middle_menu a {
+            width: 330px;
+            text-decoration: none;
+            color: #af968e;
+            font-size: 24px;
+            font-weight: bold;
+            box-sizing: border-box;
+            display: inline-block;
+            line-height: 60px;
+        }
+
+        .middle_menu a:hover {
+            background-color: #e9e2e0;
+            color: #a39089;
+        }
+
+        section {
+            width: 1860px;
+            height: 650px;
+            margin-left: 60px;
+            background-color: burlywood;
+        }
+
+        .img1 img{
+            width: 1860px;
+            height: 650px;
+        }
+        .img2 img{
+            width: 1200px;
+            height: 450px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="left_menu">
+        <ul>
+            <li><a href="#"><img src="/0401/home2.png" alt="HOME"></a></li>
+            <li><a href="#"><img src="/0401/coffee-cup.png" alt="COFFE_MENU"></a></li>
+            <li><a href="#"><img src="/0401/call.png" alt="CONTACT"></a></li>
+            <li><a href="#"><img src="/0401/messenger.png" alt="SNS"></a></li>
+            <li><a href="#"><img src="/0401/map.png" alt="MAP"></a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="/0401/coffee.jpg" alt="COFFEE">
+    </header>
+    <nav class="middle_menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">STROY</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </nav>
+    <div class="img1">
+        <section>
+            <img src="/0401/cake.jpg" alt="cake">
+        </section>
+    </div>
+    <div class="img2">
+    <section >
+        <img src="/0401/coffeebean.jpg" alt="">
+    </section>
+    </div>
+</body>
+
+</html>

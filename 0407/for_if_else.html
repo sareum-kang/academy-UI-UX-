@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    var num = 1;
+var table = "<table>";
+for (i=0; i<5; i++) {//행 작성 반복문
+    if(i%2==0) //줄을 짝수, 홀수로 나눔
+       table += "<tr class='yellow'>";
+    else
+       table += "<tr class='green'>";
+    for (n=0;n<5;n++) {//열 작성 반복문
+        table += "<td>"+num+"</td>";
+        num++;
+    }
+    able += "</tr>";
+}
+table += "</table>";
+document.write(table);
+</head>
+<body>
+    
+</body>
+</html>

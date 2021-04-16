@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/0402/kakaologin.css">
+</head>
+<body>
+    <h1>kakao</h1>
+    <div>
+        <h3>카카오계정 정보를 입력해 주세요.</h3>
+        <form action="">
+        <p>카카오계정 이메일</p>
+        <div class="email_border">
+            <input class="email" type="text" placeholder="아이디 입력">@kakao.com
+        </div>
+        <div class="list">
+            <ul>
+                <li>입력한 카카오메일로 카카오계정에 로그임할 수 있습니다.</li>
+                <li>한번 만든 카카오메일은 변경할 수 없으니, 오타가 없도록 신중히 확인해 주세요.</li>
+                <li>생성한 카카오메일로 카카오계정과 관련한 알림을 받아볼 수 있습니다.</li>
+            </ul>
+        </div>
+        <div id="pw">
+            <p>비밀번호</p>
+            <input class="password" type="password" placeholder="비밀번호(8~32자리)">
+            <input class="re_password" type="password" placeholder="비밀번호 재입력">
+        </div>
+        <div id="name_border">
+            <p>닉네임</p>
+            <input class="name" type="text" placeholder="닉네임을 입력해 주세요.">0/20
+        </div>
+        <div id="phone">
+            <p>전화번호</p>
+            <select>
+                <option value="" selected>+82</option>
+                <option value="">+81</option>
+                <option value="">+01</option>
+                <option value="">+61</option>
+            </select>
+            <input name="phone_number" type="text" placeholder="전화번호">
+        </div>
+        <div class="ck">
+        <button class="number_ck" type="submit">인증번호 전송</button>
+        </div>
+        <div class="bth_p">
+            <p>생일/성별</p>
+        </div>
+        <div class="date">
+            <select class="year" name="year">
+                <option value="" selected>연도</option>
+                <option value="">2007</option>
+                <option value="">2006</option>
+                <option value="">2005</option>
+            </select>
+            <select class="month" name="month">
+                <option value="" selected>월</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+            </select>
+            <select class="day" name="day">
+                <option value="" selected>일</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                </select>
+            </div>
+            <div class="click_box">
+                <input class="click" type="checkbox">음력
+            </div>
+            <div class="gender">
+            <input type="radio" checked>선택안함
+            <input type="radio">여성
+            <input type="radio">남성
+        </div>
+        </form>
+        <div class="btn">
+            <button class="btn_next" type="submit">다음</button>
+        </div>
+        </div>
+        <footer>
+            <ul>
+                <li>이용약관</li>
+                <li>개인정보 처리방침</li>
+                <li>운영정책</li>
+                <li>고객센터</li>
+                <li>공지사항</li>
+                <li>한국어^</li>
+            </ul>
+        </footer>
+</body>
+</html>

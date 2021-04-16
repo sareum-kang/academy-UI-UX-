@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            //이미지 태그 선택
+            var img = document.getElementsByTagName("img")[0];
+            alert(img.src);
+            img.onload = function(){
+                alert("img load");
+            }
+        }
+        
+        window.onunload = function(){
+            alert("window unload");
+        }
+        function imgLoad(){
+            alert("imgLoad");
+        }
+    </script>
+</head>
+<body>
+    <h1>onload 이벤트 테스트</h1>
+    <img src="/0415/jeju.jpg">
+    <h2>h2 영역</h2>
+
+</body>
+</html>

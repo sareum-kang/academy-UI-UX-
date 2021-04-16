@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        #leftbar {
+            width: 70px;
+            height: 1300px;
+            position: fixed;
+            background-color: rgb(184, 181, 181);
+        }
+
+        #leftbar img {
+            width: 40px;
+            height: 40px;
+            margin: 20px 0 0 15px;
+        }
+
+        header {
+            width: 1200px;
+            height: 300px;
+            margin-left: 70px;
+        }
+
+        header img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #middlebar {
+            width: 1200px;
+            height: 60px;
+            margin-left: 70px;
+            background-color: rgb(230, 230, 230);
+        }
+
+        #middlebar ul {
+            text-align: center;
+        }
+
+        #middlebar li {
+            display: inline-block;
+        }
+
+        #middlebar a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 60px;
+            padding: 0px 80px;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 1200px;
+            margin-left: 70px;
+        }
+
+        h1 {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        #box {
+            width: 530px;
+            height: 550px;
+            margin: 0 auto;
+        }
+
+        #box li {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .txt-width {
+            width: 250px;
+            height: 30px;
+        }
+
+        .mail-width {
+            height: 30px;
+        }
+
+        .title {
+            width: 150px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .content {
+            vertical-align: top;
+        }
+
+        .btn {
+            width: 80px;
+            height: 35px;
+            border: none;
+            background-color: rgb(44, 135, 255);
+            color: white;
+            border-radius: 3px;
+            margin-top: 20px;
+        }
+
+        #btn1 {
+            float: right;
+        }
+    </style>
+
+<body>
+    <nav id="leftbar">
+        <ul>
+            <li><a href="#" title="홈으로 이동"><img src="/0405 test/home.png" alt="홈"></a></li>
+            <li><a href="#" title="메뉴로 이동"><img src="/0405 test/cup.png" alt="메뉴"></a></li>
+            <li><a href="#" title="갤러리로 이동"><img src="/0405 test/picture.png" alt="갤러리"></a></li>
+            <li><a href="#" title="유튜브로 이동"><img src="/0405 test/youtube.png" alt="유튜브"></a></li>
+            <li><a href="#" title="캘린더로 이동"><img src="/0405 test/calendar.png" alt="갤린더"></a></li>
+        </ul>
+    </nav>
+    <header>
+        <img src="/0405 test/content_img.jpg" alt="도시">
+    </header>
+    <nav id="middlebar">
+        <ul>
+            <li><a href="#" title="홈 페이지로 이동">HOME</a></li>
+            <li><a href="#" title="커피 메뉴 페이지로 이동">COFFEE</a></li>
+            <li><a href="#" title="CF 페이지로 이동">CF</a></li>
+            <li><a href="#" title="프린트 페이지로 이동">PRINT</a></li>
+            <li><a href="#" title="문의 페이지로 이동">문의하기</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h1>제품 문의하기</h1>
+        <div id="box">
+            <ul>
+                <li class="title">제목</li>
+                <li><input class="txt-width" type="text" placeholder="제목을 입력해주세요" required></li>
+            </ul>
+            <ul>
+                <li class="title">작성자</li>
+                <li><input class="txt-width" type="text" placeholder="작성하신분 성함을 입력해주세요" required></li>
+            </ul>
+            <ul>
+                <li class="title">답변받을 이메일</li>
+                <li>
+                    <input class="mail-width" type="text" placeholder="이메일 주소" required><span>@</span>
+                    <select class="mail-width" name="mail" id="mail">
+                        <option value="gmail" selected>gmail.com</option>
+                        <option value="hanmail">hanmail.net</option>
+                        <option value="self">직접입력</option>
+                    </select>
+                </li>
+            </ul>
+            <ul>
+                <li class="title content">문의내용</li>
+                <li>
+                    <textarea name="qna" id="qna" cols="50" rows="15" placeholder="문의 내용을 입력해주세요" required></textarea>
+                </li>
+            </ul>
+            <button class="btn" type="submit">문의하기</button>
+            <button id="btn1" class="btn" type="submit">초기화</button>
+        </div>
+    </section>
+</body>
+
+</html>

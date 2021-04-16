@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var today = new Date("2021-04-12 00:00:00");
+        today.setDate(31); //날짜데이터 중 일자를 바꾸는 부분
+        document.write(today,"<br>");
+        today.setDate(0);
+        document.write(today,"<br>");
+        today.setDate(-1);
+        document.write(today,"<br>");
+        
+        //지정 날짜 하루 전 날짜는?
+        //setDate/getDay  setTime/getTime 
+        today.setDate(today.getDay()-1);
+        document.write(today,"<br>");
+        today.setTime(today.getTime()-(1000*60*60*24));
+        document.write(today,"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

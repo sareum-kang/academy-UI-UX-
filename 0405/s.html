@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin: 20px 10px;
+        }
+        #container{
+            width: 450px;
+            height: 500px;
+            margin-left: 10px;
+        }
+        li{
+            list-style-type: none;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .name{
+            width: 65px;
+            margin-right: 210x;
+        }
+        .content{
+            vertical-align: top;
+        }
+        button{
+            margin-top: 10px;
+            width: 50px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>게시판 글쓰기 페이지</h1>
+    <div id="container">
+        <ul>
+            <ul>
+                <li class="name">제목</li>
+                <li><input type="text" placeholder="제목을 입력하세요"></li>
+            </ul>
+            <ul>
+                <li class="name">작성자</li>
+                <li><input type="text" placeholder="작성자를 입력하세요"></li>
+            </ul>
+            <ul>
+            <li class="name content">내용</li>
+        </ul>
+            <textarea name="" id="" cols="50" rows="20" placeholder="내용을 입력하세요"></textarea>
+            <ul>
+            <li class="name">첨부파일</li>
+            <li><input type="file"></li>
+            </ul>
+            <hr>
+            <li><button type="submit">글쓰기</button></li>
+            <li><button type="submit">취소</button></li>
+        </ul>
+    </div>
+</body>
+
+</html>

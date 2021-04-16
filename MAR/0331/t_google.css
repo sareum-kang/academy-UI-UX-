@@ -1,0 +1,133 @@
+@charset 'utf-8';
+*{
+    margin:0;
+    padding:0;
+}
+ul{
+    list-style-type: none;
+}
+a:link, a:visited{
+    color:black;
+    font-size:16px;
+    line-height: 16px;
+    text-decoration: none;
+    padding:8px 0px;
+    display: inline-block;
+} 
+a:hover{
+    text-decoration: underline;
+}
+nav{
+    text-align: right;
+}
+nav ul{
+    padding: 15px;
+    display: inline-block;
+}
+nav li{
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 0px;
+}
+a > img{
+    width:16px;
+}
+.app{
+    padding:16px !important;
+}
+.app:hover{
+background-color: #e8e8e8;
+border-radius: 32px;
+}
+.login:link, .login:visited{
+    width:96px;
+    /* height: 36px; */
+    padding:9px 0px;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    display: inline-block;
+    background-color: #1a73e8;
+    color:white;
+    border-radius: 5px;
+}
+.login:hover{
+    text-decoration: none;
+    box-shadow: 0px 0px 3px #2e86f8;
+}
+section{
+    margin-top: 200px;
+    text-align: center;
+}
+
+article{
+    width: 600px;
+    margin: 40px auto;
+}
+
+section input{
+    width: 400px;
+    height: 44px;
+    padding-left: 50px;
+    font-size: 20px;
+    background-image: url('/0330/sc.png');
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: 10px center;
+    border-style: none;
+}
+form{
+    border:1px solid #e8e8e8;
+    border-radius: 22px;
+    display: inline-block;
+    padding:0px 20px;
+}
+form > * {
+    float: left;
+}
+form a {
+    display: inline-block;
+    height: 32px;
+    padding:8px 0px;
+    margin-left: 10px;
+}
+form a > img{
+    width:32px;
+}
+article > button{
+    clear: both;
+}
+article > div{
+    display: inline-block;
+}
+article button{
+    padding: 0px 20px;
+    height: 50px;
+    margin: 40px 5px 0 0;
+    font-size: 18px;
+    border: none;
+    float: left;
+    border-radius: 5px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+footer p{
+    height: 32px;
+    background-color: rgb(224, 224, 224);
+    border-bottom: 1px solid gray;
+}
+footer ul:first-child{
+    float: left;
+    width: 650px;
+}
+footer ul:last-child{
+    float: right;
+    width: 400px;
+}
+
+footer li{
+    width: 100px;
+    display: inline-block;
+}

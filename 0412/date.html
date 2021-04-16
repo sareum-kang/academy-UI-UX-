@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 오늘 날짜 정보 획득
+        // 객체생성(메모리를 할당하겠다)
+        var today = new Date();
+        document.write(today,"<br>");
+        document.write("년도:",today.getFullYear(),"<br>");
+        document.write("월:",today.getMonth(),"<br>");
+        document.write("일:",today.getDate(),"<br>");
+        document.write("요일:",today.getDay(),"<hr>");
+        // 날짜 지정
+        var yday = new Date(2021,3,11);
+        document.write(yday,"<br>");
+        document.write("년도:",yday.getFullYear(),"<br>");
+        document.write("월:",yday.getMonth(),"<br>");
+        document.write("일:",yday.getDate(),"<br>");
+        document.write("요일:",yday.getDay(),"<hr>");
+
+        today = new Date(2021,3,12)
+        document.write(today.getTime(),"<br>");
+        document.write(yday.getTime(),"<br>");
+        document.write((today-yday)/1000/60/60/24);
+        //일단위로 변환: 1,000*60*60*24(밀리초*초*분*시)
+        
+        //D-DAY 계산
+        var today = new Date(2021,4,12)
+        var theday = new Date(2021,11,18)
+        var dday = (theday.getTime()-today.getTime())/(1000*60*60*24);
+
+        console.log("수능까지 앞으로"+dday+"일 남았습니다.")
+
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

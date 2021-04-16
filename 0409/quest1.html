@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복/분기문 문제1</title>
+    <script>
+        /* 
+            숫자 두개를 입력 받아서 두수의 최대 공약수를 출력
+            ex)6과 10을 입력 받았으면 이것의 최대 공약수인 2
+        */
+        var num1=Number(prompt("숫자를 첫번째 숫자를 입력하세요"));
+        var num2=Number(prompt("숫자를 두번째 숫자를 입력하세요"));
+        var gcd;
+        if(n1> n2){
+            var temp = n1;
+            n1=n2;
+            n2=temp;
+        }
+        for(i=1;i<=n1;i++){
+            if(n1 % i ==0 && n2 % i ==0){
+            gcd = i;
+            }
+        }
+        document.write(gcd," ");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

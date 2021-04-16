@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'aa';
+        }
+
+        @font-face {
+            font-family: "aa";
+            src: url("/0323/re/NanumBrushScript-Regular.ttf");
+        }
+
+        header {
+            width: 1200px;
+            background: rgb(252, 211, 217);
+            margin: auto;
+            text-align: center;
+            position: relative;
+            padding: 45px 0px;
+            font-size: 0;
+        }
+
+        .logo {
+            float: left;
+            font-size: 32px;
+            font-weight: bold;
+            padding-left: 20px;
+        }
+
+        .btn {
+            float: right;
+            width: 80px;
+            height: 34px;
+            background-color: purple;
+            color: white;
+            font-size: 24px;
+            border-radius: 5px;
+            margin-right: 5px;
+            padding: 4px 0px 4px 36px;
+            background-image: url(/0330/qq.jpg);
+            background-repeat: no-repeat;
+            background-size: 30px;
+            background-position: 4px center;
+        }
+
+        .txt {
+            float: right;
+            width: 300px;
+            height: 30px;
+            box-sizing: border-box;
+        }
+
+        div {
+            padding: 40px;
+            box-sizing: border-box;
+            font-size: 24px;
+        }
+
+        nav {
+            box-sizing: border-box;
+            position: absolute;
+            text-align: center;
+            font-size: 0px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: inline-block;
+            width: 1200px;
+        }
+
+        li {
+            float: left;
+            background-color: lightpink;
+            width: 240px;
+        }
+
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            box-sizing: border-box;
+            padding: 10px 0px;
+            font-size: 20px;
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .container {
+            width: 1600px;
+            margin: 0 auto;
+        }
+
+        section {
+            width: 1200px;
+            padding: 20px 0px;
+            float: left;
+        }
+
+        .banner {
+            width: 170px;
+            height: 600px;
+            background-color: thistle;
+            box-sizing: border-box;
+            margin-top: 30px;
+            float: left;
+        }
+        .content_thumnail {
+            width: 100px;
+            height: 300px;
+            display: inline-block;
+            margin-left: 50px;
+        }
+
+        img {
+            width: 150px;
+            height: 170px;
+        }
+
+        h6 {
+            width: 150px;
+        }
+
+        footer {
+            clear: both;
+            width: 1200px;
+            background-color: rgb(165, 102, 111);
+            margin: auto;
+        }
+        .footer_container{
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .footer_p{
+            width: 50%;
+            line-height: 25px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <span class="logo">Logo</span>
+            <input class="txt" type="text" id="search" placeholder="검색어를 입력해주세요"><button class="btn">검색</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">메뉴1</a></li>
+                <li><a href="#">메뉴2</a></li>
+                <li><a href="#">메뉴3</a></li>
+                <li><a href="#">메뉴4</a></li>
+                <li><a href="#">메뉴5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section>
+            <aside class="banner"></aside>
+            <article>
+                <h2>article 제목</h2>
+                <div class="flot1">
+                    <div class="content_thumnail img1">
+                        <img src="/0325/cherry blossoms.jpg" alt="콘텐츠 썸네일 이미지">
+                        <h6>것이다</h6>
+                        <p>얼음 속에서</p>
+                    </div>
+                    <div class="content_thumnail">
+                        <img src="/0322/sc1.jpg" alt="콘텐츠 썸네일 이미지">
+                        <h6>것이다</h6>
+                        <p>얼음 속에서</p>
+                    </div>
+                    <div class="content_thumnail">
+                        <img src="/0318/tt1.webp" alt="콘텐츠 썸네일 이미지">
+                        <h6>것이다</h6>
+                        <p>얼음 속에서</p>
+                    </div>
+                    <div class="content_thumnail">
+                        <img src="/0318/tt2.webp" alt="콘텐츠 썸네일 이미지">
+                        <h6>것이다</h6>
+                        <p>얼음 속에서</p>
+                    </div>
+                    <div class="content_thumnail">
+                        <img src="/0318/tt3.jpg" alt="콘텐츠 썸네일 이미지">
+                        <h6>것이다</h6>
+                        <p>얼음 속에서</p>
+                    </div>
+            </article>
+            <article>
+                <h2>article 제목</h2>
+                <div class="content_thumnail img1">
+                    <img src="/0322/sc2.jpg" alt="콘텐츠 썸네일 이미지">
+                    <h6>것이다</h6>
+                    <p>얼음 속에서</p>
+                </div>
+                <div class="content_thumnail">
+                    <img src="/0322/sc2.jpg" alt="콘텐츠 썸네일 이미지">
+                    <h6>것이다</h6>
+                    <p>얼음 속에서</p>
+                </div>
+                <div class="content_thumnail">
+                    <img src="/0322/sc2.jpg" alt="콘텐츠 썸네일 이미지">
+                    <h6>것이다</h6>
+                    <p>얼음 속에서</p>
+                </div>
+                <div class="content_thumnail">
+                    <img src="/0318/tt2.webp" alt="콘텐츠 썸네일 이미지">
+                    <h6>것이다</h6>
+                    <p>얼음 속에서</p>
+                </div>
+                <div class="content_thumnail">
+                    <img src="/0322/sc4.jpg" alt="콘텐츠 썸네일 이미지">
+                    <h6>것이다</h6>
+                    <p>얼음 속에서</p>
+                </div>
+            </article>
+    </div>
+    </section>
+    </div>
+    <footer>
+        <div class="footer_container">
+            <p class="footer_p">회사명 : oooooo <br>
+            대표 : 강사름<br>
+            사업자번호 : 000-0000-0000 <br>
+            통신판매업신고번호 : 000-0000-0000 </p>
+            <p>고객센터 연락처 : 070-0000-0000 </p>
+            담당자 이메일 : <a href="mailto:rkdtkfma@naver.com" class="footer_link" title="담당자에게 메일 보내기">nexttmorrow@gmail.com</a></p>
+    
+        </div>
+    </footer>
+    </body>
+
+</html>

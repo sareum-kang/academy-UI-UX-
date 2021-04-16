@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>로또번호 생성기</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        function createNumber() {
+            return Math.floor(Math.random() * 45) + 1;
+        }
+        function createLotto() {
+            var arr = [];
+            while (arr.length != 7) {
+                var n = createNumber();
+                if (arr.indexOf(n) != -1) {
+
+                    continue;
+                }
+                arr.push(n);
+            }
+            return arr;
+        }
+        document.write(createLotto(),"<br>");
+        document.write(createLotto(),"<br>");
+        document.write(createLotto(),"<br>");
+        document.write(createLotto(),"<br>");
+        document.write(createLotto(),"<br>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
